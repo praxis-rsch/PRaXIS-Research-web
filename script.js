@@ -67,6 +67,16 @@ const renderContent = () => {
       item.append(createElement("p", "", metric.body));
     }
 
+    if (metric.points?.length) {
+      const points = createElement("ul", "metric-list");
+
+      metric.points.forEach((point) => {
+        points.append(createElement("li", "", point));
+      });
+
+      item.append(points);
+    }
+
     return item;
   });
 
@@ -143,77 +153,6 @@ const renderContent = () => {
 
     return row;
   });
-
-  const renderTeamCard = (member) => {
-    const card = createElement(
-      "article",
-      member.placeholder ? "team-card team-card-placeholder" : "team-card"
-    );
-
-    if (member.photo) {
-      const photoWrap = createElement("div", "team-photo");
-      const photo = document.createElement("img");
-      photo.src = member.photo;
-      photo.alt = `${member.name} 프로필 사진`;
-      photo.loading = "lazy";
-      photoWrap.append(photo);
-      card.append(photoWrap);
-    } else {
-      card.append(createElement("div", "team-photo-slot", "추후 사진 추가"));
-    }
-
-    if (member.role) {
-      card.append(createElement("span", "team-role", member.role));
-    }
-
-    card.append(createElement("h3", "", member.name));
-
-    const infoList = createElement("dl", "team-info-list");
-    const appendInfo = (label, value, linkHref) => {
-      const group = createElement("div", "team-info-row");
-      group.append(createElement("dt", "", label));
-
-      const detail = createElement("dd");
-      if (linkHref) {
-        const link = createElement("a", "team-email", value);
-        link.href = linkHref;
-        detail.append(link);
-      } else {
-        detail.textContent = value;
-      }
-
-      group.append(detail);
-      infoList.append(group);
-    };
-
-    appendInfo("전공 분야", member.major || "전공 분야 입력 예정");
-
-    if (member.email) {
-      appendInfo("이메일", member.email, `mailto:${member.email}`);
-    } else {
-      appendInfo("이메일", "이메일 입력 예정");
-    }
-
-    card.append(infoList);
-
-    return card;
-  };
-
-  const teamExecutives = data.team.filter(
-    (member) => member.group === "executive" || (!member.group && !member.placeholder)
-  );
-  const teamMembers = data.team.filter((member) => member.group === "member");
-
-  renderList("[data-team-leaders]", teamExecutives, renderTeamCard);
-  renderList("[data-team-members]", teamMembers, renderTeamCard);
-
-  renderList(
-    "[data-team-openings]",
-    data.team.filter((member) => member.placeholder),
-    renderTeamCard
-  );
-
-  renderList("[data-team]", [...teamExecutives, ...teamMembers], renderTeamCard);
 
   renderList("[data-faq]", data.faq, (item, index) => {
     const article = createElement("article", "accordion-item");
@@ -391,8 +330,6 @@ const initScrollReveals = () => {
     ".company-method-list li",
     ".company-cta-layout > *",
     ".event-card",
-    ".team-block-heading",
-    ".team-card",
     ".contact-intro",
     ".contact-form",
   ];
