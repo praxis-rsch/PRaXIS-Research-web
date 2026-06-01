@@ -1,0 +1,346 @@
+window.PRX_SITE_DATA = {
+  companyName: "PRαXIS Research",
+  hero: {
+    kicker: "AI 보안 솔루션",
+    title: "AI가 바꾸는 기술의 흐름 속에서, 우리는 새로운 보안 기술을 만듭니다.",
+    lead:
+      "PRαXIS Research는 빠르게 변화하는 AI 환경에서 필요한 보안 기술을 연구하고 제품화합니다.\n암호 생성·검증, 프롬프트 내 민감정보 보호, 분산 데이터 보호를 시작점으로 더 넓은 AI 보안 영역으로 확장합니다.",
+  },
+  metrics: [
+    {
+      value: "3",
+      unit: "개",
+      label: "현재 집중 분야",
+      body: "암호, 프롬프트, 분산 데이터를 시작점으로 AI 보안 문제를 확장해갑니다.",
+    },
+    {
+      value: "4",
+      unit: "개",
+      label: "연구 완료 모듈",
+      body:
+        "해시 함수, 대칭키 암호, 프롬프트 보호, 분산 데이터 보호 연구를 완료했습니다.",
+    },
+    {
+      value: "2026",
+      unit: "년",
+      label: "사업자 등록",
+      body: "2026년 사업자 등록을 기준으로 PoC와 협력 논의를 확장합니다.",
+    },
+  ],
+  markets: ["Defense", "Public Sector", "Finance", "Enterprise AI", "Edge Systems"],
+  company: {
+    title: "AI를 활용한 보안과 AI를 위한 보안을 함께 만듭니다.",
+    body:
+      "Praxis는 이론과 기술을 행동으로 옮기는 과정을 뜻합니다. PRαXIS Research는 이 의미를 AI 보안에 적용해, 암호 기술을 포함한 다양한 AI 보안 연구를 검증 가능한 기술과 서비스로 구현합니다.",
+  },
+  principles: [
+    {
+      index: "01",
+      title: "이론을 행동으로",
+      body:
+        "논문과 아이디어에 머무르지 않고 검증 가능한 모듈과 API로 옮깁니다.",
+    },
+    {
+      index: "02",
+      title: "검증 가능한 실천",
+      body:
+        "생성된 보안 구조를 자동으로 검증하고 실제 환경에서 다시 확인합니다.",
+    },
+    {
+      index: "03",
+      title: "운영되는 보안",
+      body:
+        "보안 기술은 한 번 완성되는 기능이 아니라 적용·검증·개선이 반복되는 과정이라고 봅니다.",
+    },
+  ],
+  technologyMap: [
+    {
+      step: "암호 생성",
+      title: "신경망 기반 생성",
+      body:
+        "해시 함수와 대칭키 암호 생성 연구를 완료했고, 비대칭키 및 양자내성 암호 생성으로 확장하고 있습니다.",
+    },
+    {
+      step: "안전성 검증",
+      title: "자동 안정성 검증",
+      body:
+        "생성된 구조를 복호화 가능성, 키·알고리즘 분리, 형식적 안정성, 공격 대응 기준으로 검증합니다.",
+    },
+    {
+      step: "운영 적용",
+      title: "암호 민첩성",
+      body:
+        "환경·위협·규제 변화에 맞춰 연구 결과를 교체 가능한 API와 서비스 구조로 적용합니다.",
+    },
+    {
+      step: "데이터 보호",
+      title: "AI 데이터 보호",
+      body:
+        "프롬프트와 분산 학습 데이터에서 민감 정보를 줄이면서 태스크 수행에 필요한 의미는 유지합니다.",
+    },
+  ],
+  products: [
+    {
+      eyebrow: "암호 보안",
+      title: "해시 함수·대칭키 암호 생성 및 검증",
+      body:
+        "신경망을 기반으로 해시 함수와 대칭키 암호 후보를 생성하고, 생성된 구조의 안전성을 자동으로 검증합니다. 비대칭키 암호 생성은 연구 진행 단계입니다.",
+      status: [
+        "해시 함수 생성기: 연구 완료",
+        "대칭키 암호 생성기: 연구 완료",
+        "비대칭키 암호 생성기: 연구 진행",
+        "자동 안전성 검증",
+      ],
+    },
+    {
+      eyebrow: "프롬프트 민감정보 보호",
+      title: "프롬프트 내 민감정보 보호 솔루션",
+      body:
+        "외부 AI 모델로 전달되는 프롬프트에서 개인정보, 기밀, 인증 정보 등 민감한 단서를 줄이면서도 답변에 필요한 업무 맥락은 유지하는 보호 계층입니다.",
+      status: [
+        "문맥 기반 민감정보 탐지",
+        "업무 맥락 보존",
+        "로컬 복원 및 세션 관리",
+      ],
+    },
+    {
+      eyebrow: "분산 AI 데이터 보호",
+      title: "분산 학습·추론 데이터 보호 솔루션",
+      body:
+        "중앙 시스템으로 원본 데이터를 모두 보내지 않고, 태스크에 필요한 정보만 남긴 뒤 민감 정보를 제거해 전송하는 보호 방식입니다.",
+      status: [
+        "사전 데이터 정제",
+        "학습·추론 데이터 최소화",
+        "서버 전송 전 민감 정보 제거",
+      ],
+    },
+  ],
+  usecases: [
+    {
+      title: "암호 생성·검증",
+      body:
+        "신경망 기반 생성과 자동 검증을 활용해 해시 함수와 대칭키 암호 후보를 탐색합니다.",
+      visual: "generation",
+    },
+    {
+      title: "AI 모델·에이전트 도입 환경",
+      body:
+        "프롬프트, 도구 호출, 세션 데이터에 포함되는 민감 정보와 내부 정책 노출을 줄입니다.",
+      visual: "agent",
+    },
+    {
+      title: "데이터 협업과 분산 학습",
+      body:
+        "원본 데이터를 모두 모으지 않고 필요한 정보만 정제해 학습·추론 흐름에 활용하도록 설계합니다.",
+      visual: "data",
+    },
+    {
+      title: "AI 보안 평가와 자동화",
+      body:
+        "모델 사용 방식, 데이터 흐름, 운영 정책을 함께 보고 보안 평가와 레드팀 자동화로 확장합니다.",
+      visual: "evaluation",
+    },
+  ],
+  events: [
+    {
+      date: "진행중",
+      type: "poc",
+      tag: "실증 논의",
+      title: "공공·금융 보안 인프라 PoC 논의",
+      body:
+        "공공·금융 보안 환경에 맞춘 적용 방식과 실증 범위를 논의하고 있습니다.",
+    },
+    {
+      date: "2026.05 - 진행중",
+      type: "research",
+      tag: "연구 과제",
+      title: "KISA 프롬프트 보호 기술 연구 과제 선정",
+      body:
+        "프롬프트 내 민감정보 보호 기술을 주제로 한 KISA 연구 과제를 수행하고 있습니다.",
+    },
+    {
+      date: "2026.05",
+      type: "startup",
+      tag: "창업 지원",
+      title: "2026년 창업중심대학 지원 사업 선정",
+      body:
+        "창업중심대학 지원 사업에 선정되어 7,000만 원 규모의 사업화 지원을 확보했습니다.",
+    },
+    {
+      date: "2026.05",
+      type: "startup",
+      tag: "창업 지원",
+      title: "2026년 실험실특화형창업선도대학 지원 사업 선정",
+      body:
+        "실험실 기반 기술 창업을 위한 지원 사업에 선정되어 7,000만 원 규모의 사업화 지원을 확보했습니다.",
+    },
+    {
+      date: "2026.05",
+      type: "competition",
+      tag: "경진대회",
+      title: "2026년 인공지능 챔피언 Top 100 선정",
+      body:
+        "AI 보안 연구 아이템으로 인공지능 챔피언 Top 100에 선정되었습니다.",
+    },
+    {
+      date: "2025.09",
+      type: "award",
+      tag: "수상",
+      title: "호남사이버보안컨퍼런스 최우수 논문상",
+      body:
+        "AI 기반 암호 생성 및 검증 연구를 바탕으로 최우수 논문상을 수상했습니다.",
+    },
+    {
+      date: "2025.09",
+      type: "exhibition",
+      tag: "전시",
+      title: "AI Festa 부스 전시",
+      body:
+        "기술 데모를 전시하고 투자자, 엔지니어, 보안 관계자와 사업화 가능성을 논의했습니다.",
+    },
+    {
+      date: "2025.07 - 2025.12",
+      type: "research",
+      tag: "연구 과제",
+      title: "KISA 암호 기술 연구 과제 선정",
+      body:
+        "암호 생성·검증 기술을 주제로 한 KISA 연구 과제를 수행했습니다.",
+    },
+    {
+      date: "2025.06",
+      type: "competition",
+      tag: "경진대회",
+      title: "2025년 인공지능 챔피언 Top 100 선정",
+      body:
+        "AI 보안 연구 아이템으로 인공지능 챔피언 Top 100에 선정되었습니다.",
+    },
+  ],
+  roadmap: [
+    {
+      phase: "Research",
+      title: "기술 문제를 정의합니다.",
+      body:
+        "AI가 바꾸는 보안 환경에서 암호, 프롬프트, 데이터 흐름의 문제를 연구 단위로 분해합니다.",
+      visual: "research",
+    },
+    {
+      phase: "Implementation",
+      title: "작동 가능한 모듈로 구현합니다.",
+      body:
+        "생성, 탐지, 정제, 검증 기술을 API와 워크플로우 형태로 옮겨 실험 가능한 구조를 만듭니다.",
+      visual: "implementation",
+    },
+    {
+      phase: "Validation",
+      title: "현장 조건에 맞춰 검증합니다.",
+      body:
+        "PoC와 공동 연구를 통해 데이터 조건, 모델 사용 방식, 운영 정책에 맞게 기술을 조정합니다.",
+      visual: "validation",
+    },
+  ],
+  team: [
+    {
+      group: "executive",
+      role: "최고경영자 (CEO)",
+      name: "박태준",
+      email: "taejune.park@praxis.re.kr",
+      photo: "assets/executives/박태준.png",
+      major: "정보보안, 네트워크",
+    },
+    {
+      group: "executive",
+      role: "최고기술책임자 (CTO)",
+      name: "문성수",
+      email: "seongsu.moon@praxis.re.kr",
+      photo: "assets/executives/문성수.jpg",
+      major: "인공지능",
+    },
+    {
+      group: "executive",
+      role: "수석연구원 (Principal Researcher)",
+      name: "정주연",
+      email: "juyeon.jeong@praxis.re.kr",
+      photo: "assets/executives/정주연.png",
+      major: "인공지능",
+    },
+    {
+      group: "member",
+      role: "기술자문",
+      name: "유동현",
+      email: "donghyun.yu@jnu.ac.kr",
+      photo: "assets/members/유동현.jpg",
+      major: "암호학",
+    },
+    {
+      group: "member",
+      role: "시스템엔지니어",
+      name: "김수연",
+      email: "rlatndus6205@jnu.ac.kr",
+      photo: "assets/members/김수연.jpg",
+      major: "네트워크",
+    },
+    {
+      group: "member",
+      role: "연구원",
+      name: "김경준",
+      email: "202144@jnu.ac.kr",
+      photo: "assets/members/김경준.png",
+      major: "시스템보안",
+    },
+    {
+      group: "member",
+      role: "연구원",
+      name: "양시은",
+      email: "didtldms2525@jnu.ac.kr",
+      photo: "assets/members/양시은.jpg",
+      major: "시스템보안",
+    },
+    {
+      group: "member",
+      role: "연구원",
+      name: "조승용",
+      email: "csy8997@jnu.ac.kr",
+      photo: "assets/members/조승용.jpg",
+      major: "네트워크",
+    },
+    {
+      group: "member",
+      role: "연구원",
+      name: "조아영",
+      email: "papilio9123@jnu.ac.kr",
+      photo: "assets/members/조아영.jpg",
+      major: "네트워크",
+    },
+  ],
+  faq: [
+    {
+      question: "PRαXIS라는 이름은 무엇을 뜻하나요?",
+      answer:
+        "Praxis는 이론이나 기술을 실제 행동과 적용으로 옮기는 과정을 뜻합니다. PRαXIS Research는 이 의미를 AI 보안 연구를 작동하는 기술과 서비스로 구현한다는 방향으로 해석합니다.",
+    },
+    {
+      question: "PRαXIS Research는 암호 회사인가요, AI 보안 회사인가요?",
+      answer:
+        "PRαXIS Research는 AI 보안 회사입니다. 암호 생성·검증, 프롬프트·에이전트 보안, 분산 데이터 보호, AI 보안 평가 영역을 함께 다룹니다.",
+    },
+    {
+      question: "현재 바로 도입 가능한 제품이 있나요?",
+      answer:
+        "해시 함수와 대칭키 암호 생성 연구는 완료 단계이며, PoC와 연구 협력 중심으로 적용 환경을 검토하고 있습니다.",
+    },
+    {
+      question: "구글 스프레드시트로 문의를 받을 수 있나요?",
+      answer:
+        "가능합니다. Google Apps Script 웹앱 URL을 sheets-config.js에 넣으면 문의 양식을 스프레드시트로 전송할 수 있습니다.",
+    },
+  ],
+  contact: {
+    points: [
+      "이메일: taejune.park@praxis.re.kr",
+      "전화번호: 062-530-4232",
+      "주소: 광주광역시 북구 용봉로 77\n공과대학 7호관 422호 (우 61186)",
+    ],
+  },
+  footer:
+    "PRαXIS Research는 변화하는 AI 환경에 맞춰 새로운 보안 기술을 연구하고 제품화합니다.",
+};
