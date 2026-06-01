@@ -271,5 +271,5 @@ window.PRX_SITE_DATA = {
     ],
   },
   footer:
-    "PRαXIS Research는 변화하는 AI 환경에 맞춰 새로운 보안 기술을 연구하고 제품화합니다.",
+    "PRαXIS Research는 변화하는 AI 환경에 맞춰\n새로운 보안 기술을 연구하고 제품화합니다.",
 };

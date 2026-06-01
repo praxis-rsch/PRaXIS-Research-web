@@ -879,6 +879,28 @@ textarea {
   line-height: 1.82;
 }
 
+.company-affiliation-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: end;
+}
+
+.company-affiliation-layout h2 {
+  max-width: 920px;
+  margin: 0;
+  font-size: clamp(2.35rem, 4.8vw, 4.6rem);
+  line-height: 1.05;
+  word-break: keep-all;
+}
+
+.company-affiliation-layout h2 a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
 .compact {
   margin-bottom: 42px;
 }
@@ -2110,6 +2132,27 @@ textarea {
   color: rgba(255, 255, 255, 0.62);
 }
 
+.site-footer p[data-footer-description] {
+  white-space: pre-line;
+}
+
+.site-footer .footer-affiliation {
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+  line-height: 1.68;
+  word-break: keep-all;
+}
+
+.site-footer .footer-affiliation a {
+  display: inline;
+  margin: 0;
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .site-footer h2 {
   margin: 0 0 16px;
   font-size: 0.82rem;
@@ -2218,6 +2261,7 @@ textarea {
   .company-belief-layout,
   .company-method-layout,
   .company-cta-layout,
+  .company-affiliation-layout,
   .split-layout,
   .usecase-layout,
   .roadmap-layout,
@@ -2226,6 +2270,10 @@ textarea {
   .contact-layout,
   .detail-layout {
     grid-template-columns: 1fr;
+  }
+
+  .company-affiliation-layout .button {
+    justify-self: start;
   }
 
   .hero h1 {
@@ -2495,6 +2543,13 @@ textarea {
     font-size: 1.04rem;
   }
 
+  .company-affiliation-layout h2 {
+    font-size: 2.1rem;
+    line-height: 1.14;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
   .principle-grid,
   .link-card-grid,
   .company-two-axis,
@@ -2647,6 +2702,7 @@ textarea {
 
   .section-heading h2,
   .page-hero h1,
+  .company-affiliation-layout h2,
   .contact-intro h1,
   .contact-intro h2 {
     font-size: 2rem;
