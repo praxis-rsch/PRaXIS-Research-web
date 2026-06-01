@@ -866,11 +866,15 @@ textarea {
 }
 
 .company-cta-layout h2 {
-  max-width: 760px;
+  max-width: none;
   margin: 0;
-  font-size: clamp(2.8rem, 5.4vw, 5.2rem);
+  font-size: clamp(2.8rem, 3.4vw, 3.85rem);
   line-height: 1.02;
   word-break: keep-all;
+}
+
+.company-cta-layout h2 span {
+  display: block;
 }
 
 .company-cta-layout > p {
@@ -881,17 +885,28 @@ textarea {
 
 .company-affiliation-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 32px;
-  align-items: end;
+  gap: 30px;
+  align-items: start;
 }
 
 .company-affiliation-layout h2 {
-  max-width: 920px;
+  max-width: none;
   margin: 0;
-  font-size: clamp(2.35rem, 4.8vw, 4.6rem);
-  line-height: 1.05;
+  font-size: clamp(2.8rem, 3.4vw, 3.85rem);
+  line-height: 1.02;
   word-break: keep-all;
+}
+
+.company-affiliation-layout h2 span {
+  display: block;
+}
+
+.company-affiliation-layout h2 span:nth-child(2) {
+  white-space: nowrap;
+}
+
+.company-affiliation-layout .button {
+  justify-self: start;
 }
 
 .company-affiliation-layout h2 a {
@@ -2548,6 +2563,10 @@ textarea {
     line-height: 1.14;
     word-break: normal;
     overflow-wrap: anywhere;
+  }
+
+  .company-affiliation-layout h2 span:nth-child(2) {
+    white-space: normal;
   }
 
   .principle-grid,
